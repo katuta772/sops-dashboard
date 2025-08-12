@@ -42,7 +42,7 @@ body{
     background-color: #313131;
     color:#f2cc38;
     width: 12rem;
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 .sidebar > .view{
@@ -51,7 +51,7 @@ body{
 .sidebar > .view:hover{
     font-weight: bold;
     cursor: pointer;
-    transform: translateX(1rem);
+    transform: translateX(1.5rem);
 }
 /* CONTENT SECTION */
 .content{
@@ -65,8 +65,14 @@ body{
     border-collapse: collapse;
 }
 
-.content > .table > tr,th,td{
+.content > .table tr,th,td{
     border:1px solid #313131;
     text-align: center;
     padding: 0.5rem 3rem;
+}
+
+.content > .table td:hover{
+    cursor:pointer;
+    font-weight: bold;
+    color: #00A082;
 }
