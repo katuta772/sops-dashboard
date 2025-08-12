@@ -81,7 +81,7 @@ function populateTable() {
         let w1Value = rowData[1];
         let belowTarget = w1Value !== "" && w1Value < target;
 
-        let actionText = belowTarget ? "Under Target, adjust" : "On Target";
+        let actionText = belowTarget ? "On Target" : "Under target, adjust";
         rowData[5] = actionText;
 
         let row = document.createElement("tr");
@@ -91,7 +91,7 @@ function populateTable() {
 
             // Apply color to W-1 column only
             if (idx === 1 && w1Value !== "") {
-                cell.style.color = belowTarget ? "red" : "green";
+                cell.style.color = belowTarget ? "green" : "red";
                 cell.style.fontWeight = "bold";
             }
 
