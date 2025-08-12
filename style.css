@@ -31,7 +31,6 @@ body{
 .main{
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 5rem;
     width: 100vh;
 }
 
@@ -41,9 +40,9 @@ body{
     gap:1rem;
     flex-direction: column;
     background-color: #313131;
-    padding: 1rem;
     color:#f2cc38;
     width: 12rem;
+    padding: 1rem;
 }
 
 .sidebar > .view{
@@ -57,4 +56,17 @@ body{
 /* CONTENT SECTION */
 .content{
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > .table{
+    border: 1px solid #313131;
+    border-collapse: collapse;
+}
+
+.content > .table > tr,th,td{
+    border:1px solid #313131;
+    text-align: center;
+    padding: 0.5rem 3rem;
 }
